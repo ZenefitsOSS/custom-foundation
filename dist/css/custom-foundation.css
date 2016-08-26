@@ -290,7 +290,7 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
 /*
   Blocks are containers for actual content. They're the "columns" of Foundation for Apps.
 */
-.vertical.grid-frame, .vertical.grid-block, .vertical.small-grid-block, .vertical.medium-grid-block, .vertical.large-grid-block {
+.vertical.grid-frame, .vertical.grid-block, .grid-block > .vertical.liquid-child, .vertical.small-grid-block, .vertical.medium-grid-block, .vertical.large-grid-block {
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
@@ -299,7 +299,7 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
   -ms-grid-row-align: stretch;
   align-items: stretch; }
 
-.small-vertical.grid-frame, .small-vertical.grid-block, .small-vertical.small-grid-block, .small-vertical.medium-grid-block, .small-vertical.large-grid-block {
+.small-vertical.grid-frame, .small-vertical.grid-block, .grid-block > .small-vertical.liquid-child, .small-vertical.small-grid-block, .small-vertical.medium-grid-block, .small-vertical.large-grid-block {
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
@@ -308,13 +308,13 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
   -ms-grid-row-align: stretch;
   align-items: stretch; }
 
-.small-horizontal.grid-frame, .small-horizontal.grid-block, .small-horizontal.small-grid-block, .small-horizontal.medium-grid-block, .small-horizontal.large-grid-block {
+.small-horizontal.grid-frame, .small-horizontal.grid-block, .grid-block > .small-horizontal.liquid-child, .small-horizontal.small-grid-block, .small-horizontal.medium-grid-block, .small-horizontal.large-grid-block {
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
 
 @media only screen and (min-width: 40em) {
-  .medium-vertical.grid-frame, .medium-vertical.grid-block, .medium-vertical.small-grid-block, .medium-vertical.medium-grid-block, .medium-vertical.large-grid-block {
+  .medium-vertical.grid-frame, .medium-vertical.grid-block, .grid-block > .medium-vertical.liquid-child, .medium-vertical.small-grid-block, .medium-vertical.medium-grid-block, .medium-vertical.large-grid-block {
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
@@ -322,13 +322,13 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
     -ms-flex-align: stretch;
     -ms-grid-row-align: stretch;
     align-items: stretch; }
-  .medium-horizontal.grid-frame, .medium-horizontal.grid-block, .medium-horizontal.small-grid-block, .medium-horizontal.medium-grid-block, .medium-horizontal.large-grid-block {
+  .medium-horizontal.grid-frame, .medium-horizontal.grid-block, .grid-block > .medium-horizontal.liquid-child, .medium-horizontal.small-grid-block, .medium-horizontal.medium-grid-block, .medium-horizontal.large-grid-block {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap; } }
 
 @media only screen and (min-width: 75em) {
-  .large-vertical.grid-frame, .large-vertical.grid-block, .large-vertical.small-grid-block, .large-vertical.medium-grid-block, .large-vertical.large-grid-block {
+  .large-vertical.grid-frame, .large-vertical.grid-block, .grid-block > .large-vertical.liquid-child, .large-vertical.small-grid-block, .large-vertical.medium-grid-block, .large-vertical.large-grid-block {
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
@@ -336,32 +336,32 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
     -ms-flex-align: stretch;
     -ms-grid-row-align: stretch;
     align-items: stretch; }
-  .large-horizontal.grid-frame, .large-horizontal.grid-block, .large-horizontal.small-grid-block, .large-horizontal.medium-grid-block, .large-horizontal.large-grid-block {
+  .large-horizontal.grid-frame, .large-horizontal.grid-block, .grid-block > .large-horizontal.liquid-child, .large-horizontal.small-grid-block, .large-horizontal.medium-grid-block, .large-horizontal.large-grid-block {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap; } }
 
-.align-right.grid-frame, .align-right.grid-block, .align-right.small-grid-block, .align-right.medium-grid-block, .align-right.large-grid-block {
+.align-right.grid-frame, .align-right.grid-block, .grid-block > .align-right.liquid-child, .align-right.small-grid-block, .align-right.medium-grid-block, .align-right.large-grid-block {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
-.align-center.grid-frame, .align-center.grid-block, .align-center.small-grid-block, .align-center.medium-grid-block, .align-center.large-grid-block {
+.align-center.grid-frame, .align-center.grid-block, .grid-block > .align-center.liquid-child, .align-center.small-grid-block, .align-center.medium-grid-block, .align-center.large-grid-block {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
-.align-justify.grid-frame, .align-justify.grid-block, .align-justify.small-grid-block, .align-justify.medium-grid-block, .align-justify.large-grid-block {
+.align-justify.grid-frame, .align-justify.grid-block, .grid-block > .align-justify.liquid-child, .align-justify.small-grid-block, .align-justify.medium-grid-block, .align-justify.large-grid-block {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.align-spaced.grid-frame, .align-spaced.grid-block, .align-spaced.small-grid-block, .align-spaced.medium-grid-block, .align-spaced.large-grid-block {
+.align-spaced.grid-frame, .align-spaced.grid-block, .grid-block > .align-spaced.liquid-child, .align-spaced.small-grid-block, .align-spaced.medium-grid-block, .align-spaced.large-grid-block {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
-.wrap.grid-frame, .wrap.grid-block, .wrap.small-grid-block, .wrap.medium-grid-block, .wrap.large-grid-block {
+.wrap.grid-frame, .wrap.grid-block, .grid-block > .wrap.liquid-child, .wrap.small-grid-block, .wrap.medium-grid-block, .wrap.large-grid-block {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -370,12 +370,12 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
   -ms-grid-row-align: flex-start;
   align-items: flex-start; }
 
-.shrink.grid-block, .shrink.grid-content, .shrink.small-grid-block, .shrink.small-grid-content, .shrink.medium-grid-block, .shrink.medium-grid-content, .shrink.large-grid-block, .shrink.large-grid-content {
+.shrink.grid-block, .grid-block > .shrink.liquid-child, .shrink.grid-content, .shrink.small-grid-block, .shrink.small-grid-content, .shrink.medium-grid-block, .shrink.medium-grid-content, .shrink.large-grid-block, .shrink.large-grid-content {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
 
-.noscroll.grid-block, .noscroll.grid-content, .noscroll.small-grid-block, .noscroll.small-grid-content, .noscroll.medium-grid-block, .noscroll.medium-grid-content, .noscroll.large-grid-block, .noscroll.large-grid-content {
+.noscroll.grid-block, .grid-block > .noscroll.liquid-child, .noscroll.grid-content, .noscroll.small-grid-block, .noscroll.small-grid-content, .noscroll.medium-grid-block, .noscroll.medium-grid-content, .noscroll.large-grid-block, .noscroll.large-grid-content {
   overflow: hidden; }
 
 .grid-frame {
@@ -406,7 +406,7 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
   -ms-flex-order: 0;
   order: 0; }
 
-.grid-block {
+.grid-block, .grid-block > .liquid-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -449,14 +449,14 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
   flex: 1 1 auto; }
   .grid-content.collapse {
     padding: 0; }
-  .grid-content .grid-block {
+  .grid-content .grid-block, .grid-content .grid-block > .liquid-child {
     margin-left: -1rem;
     margin-right: -1rem;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     overflow: visible; }
-    .grid-content .grid-block.nowrap {
+    .grid-content .grid-block.nowrap, .grid-content .grid-block > .nowrap.liquid-child {
       -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -1633,7 +1633,7 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
       -ms-flex: 0 0 8.33333%;
       flex: 0 0 8.33333%; } }
 
-.grid-content .modal .grid-block {
+.grid-content .modal .grid-block, .grid-content .modal .grid-block > .liquid-child {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap; }
